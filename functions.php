@@ -49,3 +49,12 @@ function custom_sidebars() {
 }
 add_action( 'widgets_init', 'custom_sidebars' );
 
+// Function to return user count
+function wpb_user_count() { 
+$usercount = count_users();
+$result = $usercount['total_users']; 
+return $result; 
+} 
+// Creating a shortcode to display user count
+add_shortcode('user_count', 'wpb_user_count');
+
