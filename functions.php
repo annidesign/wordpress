@@ -23,7 +23,11 @@ $output = $copyright;
 return $output;
 }
 //shortcode 
-<?php echo wpb_copyright(); ?>
+//<?php echo wpb_copyright();
 
+//navigation menu 
+function wpb_custom_new_menu() {
+  register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
+}
+add_action( 'init', 'wpb_custom_new_menu' );
 
-?>
