@@ -1,5 +1,6 @@
 <?php 
 
+//copyright functions 
 function wpb_copyright() {
 global $wpdb;
 $copyright_dates = $wpdb->get_results("
@@ -21,6 +22,8 @@ $output = $copyright;
 }
 return $output;
 }
-?>
 //shortcode 
 <?php echo wpb_copyright(); ?>
+
+
+?>
