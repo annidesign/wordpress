@@ -13,6 +13,11 @@
 	//end of all sidebar checks. 
 	
     ?>
+		<aside class="fatfooter" role="complementary">
+	<div class="first full-width widget-area">
+		<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
+	</div><!-- .first .widget-area -->
+</aside><!-- #fatfooter -->
 <?php wp_footer(); ?>
 
 </body>
